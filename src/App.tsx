@@ -9,6 +9,7 @@ import { experiences } from './data/experiences';
 import { projects } from './data/projects';
 import Contact from './components/Contact';
 import Logo from "../assets/profile.jpg";
+import Resume from "../assets/Resume.pdf";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
@@ -125,8 +126,8 @@ function App() {
                 When I'm not coding, you can find me enjoying cooking and traveling.
               </p>
               <motion.a
-  href="/assets/resume.pdf"  // Replace with the actual path to your resume file
-  download="resume.pdf"  // The name that the downloaded file will have
+  href={Resume}  // Replace with the actual path to your resume file
+  download="Resume.pdf"  // The name that the downloaded file will have
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
   className="bg-indigo-600 text-white px-8 py-3 rounded-lg hover:bg-indigo-700 transition-colors"
