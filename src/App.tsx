@@ -100,7 +100,7 @@ function App() {
               transition={{ duration: 0.5 }}
               className="rounded-lg overflow-hidden shadow-xl"
               style={{
-                backgroundImage: 'url("../assets/profile.jpg")',
+                backgroundImage: 'url("../profile.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '400px',
