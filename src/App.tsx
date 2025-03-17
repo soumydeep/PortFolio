@@ -103,10 +103,10 @@ function App() {
                 backgroundImage: 'url("../assets/profile.jpg")',
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
-                height: '300px',
-                width :'300px',
-                left:"30%",
-                padding:"100px",
+                height: '400px',
+                width :'400px',
+                left:"20%",
+                padding:"70px",
                 position:"relative"
               }}
             />
