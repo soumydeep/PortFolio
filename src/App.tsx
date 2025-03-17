@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ExternalLink, Code, Briefcase, User, Send } from 'lucide-react';
+import { Github, Linkedin, Mail, ExternalLink, Code, Briefcase, User, Send, Import } from 'lucide-react';
 import Header from './components/Header';
 import Timeline from './components/Timeline';
 import ProjectCard from './components/ProjectCard';
@@ -8,6 +8,7 @@ import ProjectModal from './components/ProjectModal';
 import { experiences } from './data/experiences';
 import { projects } from './data/projects';
 import Contact from './components/Contact';
+import Logo from "../assets/profile.jpg";
 
 function App() {
   const [selectedProject, setSelectedProject] = useState<typeof projects[0] | null>(null);
@@ -100,7 +101,7 @@ function App() {
               transition={{ duration: 0.5 }}
               className="rounded-lg overflow-hidden shadow-xl"
               style={{
-                backgroundImage: 'url("../profile.jpg")',
+                backgroundImage: `url(${Logo})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 height: '400px',
